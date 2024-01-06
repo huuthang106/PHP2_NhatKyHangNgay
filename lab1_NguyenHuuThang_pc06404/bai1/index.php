@@ -1,8 +1,8 @@
 <?php
 $course = [
-    's1' => 'course',
-    's2' => 'course',
-    's3' => 'course'
+    's1' => 'course1',
+    's2' => 'course2',
+    's3' => 'course3'
 ];
 //models
 function get_course(){
@@ -25,6 +25,6 @@ $page_content = $course_name;
 <select name="courses" id="">
     <?php
         foreach($list_of_course as $course_name): ?>
-        <option value=""><?=$course_name?></option>
+        <option value="<?=$course_name;?>"><?=$course_name?></option>
         <?php endforeach;?>
 </select>

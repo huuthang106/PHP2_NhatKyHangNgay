@@ -1,5 +1,5 @@
 <?php $course = [
-    's1' => 'course',
-    's2' => 'course',
-    's3' => 'course'
+    's1' => 'course1',
+    's2' => 'course2',
+    's3' => 'course3'
 ];?>
