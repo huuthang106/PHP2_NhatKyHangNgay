@@ -1,0 +1,15 @@
+{
+    "name": "thang/bai3",
+    "autoload": {
+        "psr-4": {
+            "Core\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "huuthang106",
+            "email": "thangcachep106@gmail.com"
+        }
+    ],
+    "require": {}
+}

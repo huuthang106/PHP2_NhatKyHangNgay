@@ -1,12 +1,19 @@
 <?php
-    require 'Database.php';
+    // require 'Database.php';
     // spl_autoload_register(function($class){
     //     var_dump($class);
     //     include $class.'.php';
     // });
-    // require 'vendor/autoload.php';
-    use Core\Database as DB;
-    $db = new DB();
+    require 'vendor/autoload.php';
+    use App\Model\BaseModel  as MD;
+    use App\Core\Route  as rt;
+    use App\Controller\BaseControl  as CT;
+    $db = new MD();
+    $db ->hellModel();
+    $db = new rt();
+    $db ->helloRoute();
+    $db = new CT();
+    $db->helloController();
 ?>
 <!DOCTYPE html>
 <html lang="en">
