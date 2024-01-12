@@ -210,3 +210,18 @@
     
 })(jQuery);
 
+document.addEventListener('DOMContentLoaded', function () {
+    var links = document.querySelectorAll('.nav-item.nav-link');
+
+    links.forEach(function (link) {
+        link.addEventListener('click', function () {
+            // Xóa class "active" từ tất cả các liên kết
+            links.forEach(function (otherLink) {
+                otherLink.classList.remove('active');
+            });
+
+            // Thêm class "active" cho liên kết hiện tại
+            link.classList.add('active');
+        });
+    });
+});
