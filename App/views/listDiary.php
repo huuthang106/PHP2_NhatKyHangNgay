@@ -9,7 +9,7 @@
                         <div class="bg-secondary rounded h-100 p-4">
                             <h6 class="mb-4">Responsive Table</h6>
                             <div class="table-responsive">
-                                <table class="table">
+                                <table class="table" id='myTable'>
                                     <thead>
                                         <tr>
                                             <th scope="col">#</th>
