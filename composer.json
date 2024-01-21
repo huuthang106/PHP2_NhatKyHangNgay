@@ -1,0 +1,16 @@
+{
+    "name": "admin/php2_nhat-ky-hang-ngay",
+    "description": "lab3/php2",
+    "autoload": {
+        "psr-4": {
+            "App\\": "App/"
+        }
+    },
+    "authors": [
+        {
+            "name": "huuthang106",
+            "email": "thangcachep106@gmail.com"
+        }
+    ],
+    "require": {}
+}
