@@ -3,6 +3,8 @@
     require_once 'vendor/autoload.php';
     use  App\Core\Form;
     use  App\Core\Field;
+    use App\Models\User;
+    $user = new User('User');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -31,6 +33,11 @@
         <div class="btn-group" role="group" aria-label="Basic example" style="margin-top: 2%;">
         <button type="submit" class="btn btn-primary" >Submit</button>
         </div>
+        <div class='container px-4 text-center'>
+        <div class='row gx-5'>
+            <?php $user->getAll() ;  ?>
+        </div>
+      </div>
     </div>
 </body>
 </html>
