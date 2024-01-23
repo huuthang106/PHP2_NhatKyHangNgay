@@ -1,6 +1,5 @@
 {
-    "name": "admin/php2_nhat-ky-hang-ngay",
-    "description": "lab3/php2",
+    "name": "admin/php",
     "autoload": {
         "psr-4": {
             "App\\": "App/"
