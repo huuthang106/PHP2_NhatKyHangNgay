@@ -2,8 +2,8 @@
     
     require_once 'vendor/autoload.php';
     use App\Core\Route as Router;
-    use App\Home;
-    use App\Invoices;
+    // use App\Home;
+    // use App\Invoices;
     $router = new Router();
     // bai3
     // $router->register(
