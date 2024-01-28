@@ -5,19 +5,22 @@ namespace App\Core;
 class Route
 {
     protected array $routes;
-    public function register(string $route, callable|array $action): self
+    public function register(string $requestMethod,string $route, callable|array $action): self
     {
         // var_dump($route);
-        $this->routes[$route] = $action;
+        // $this->routes[$route] = $action;
+        // $this->routes[$route] = $action;
+        $this->routes[$requestMethod][$route] = $action;
         // var_dump($this->routes);
         // echo 'I am route register';
         return $this;
     }
 
-    public function resolve(string $requesUrl)
+    public function resolve(string $requesUrl,string $requestMethod)
     {
         $route = explode('?', $requesUrl)[0];
-        $action = $this->routes[$route] ?? null;
+        // $action = $this->routes[$route] ?? null;
+        $action = $this->routes[$requestMethod][$route] ?? null;
         if (!$action) {
             // throw new RouteNoFoundException();
             echo 'not found';
@@ -35,4 +38,10 @@ class Route
             }
         }
     }
+    public function get (string $route, callable|array $action) : self{
+        return $this -> register('get',$route,$action);
+    } 
+    public function post (string $route, callable|array $action) : self{
+        return $this -> register('post',$route,$action);
+    } 
 }
