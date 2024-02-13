@@ -53,7 +53,8 @@ class Login
                     </div>
                 
                     <button type="submit" name ="submit" class="btn btn-primary" value="submit">Submit</button>
-                     <a href="/forgotpassword" class="btn btn-primary">Quên mật khẩu</a>
+                <a href="/register" class="btn btn-primary">Đăng ký</a>
+                <a href="/forgotpassword" class="btn btn-primary">Quên mật khẩu</a>
                 
                      <a href="/" class="btn btn-primary">Trang chủ</a>
                     
@@ -73,6 +74,7 @@ class Login
                 </div>
                 ' . ($error ? '<div class="alert alert-danger" role="alert">' . $error . '</div>' : '') . '
                 <button type="submit" name ="submit" class="btn btn-primary" value="submit">Submit</button>
+                <a href="/register" class="btn btn-primary">Đăng ký</a>
                 <a href="/forgotpassword" class="btn btn-primary">Quên mật khẩu</a>
    
                 <a href="/" class="btn btn-primary">Trang chủ</a>
@@ -205,7 +207,7 @@ class Login
         return
             '
         
-        <div class="alert alert-danger" role="alert">' .$password. '</div>
+        <div class="alert alert-danger" role="alert">' . $password . '</div>
         <a href="/login" class="btn btn-primary">Đăng nhập</a>
     ';
     }

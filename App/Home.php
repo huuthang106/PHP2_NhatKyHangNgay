@@ -12,6 +12,7 @@ class Home
             <form action="/upload" method ="post" enctype="multipart/form-data">
             <input type ="file" name="receipt"/>
             <button type="submit"> Upload</button>
+            <a href="/login" class="btn btn-primary">Đăng nhập</a>
             
             </form>
             FORM;
@@ -22,6 +23,8 @@ class Home
             <form action="/upload" method ="post" enctype="multipart/form-data">
             <input type ="file" name="receipt"/>
             <button type="submit"> Upload</button>
+            <a href="/login" class="btn btn-primary">Đăng nhập</a>
+
                 
                    
             </form>

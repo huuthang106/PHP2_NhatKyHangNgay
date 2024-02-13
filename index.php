@@ -28,6 +28,8 @@ $router
     ->get('/forgotpassword', [App\Login::class, 'fotgot'])
     ->post('/forgotpassword', [App\Login::class, 'fotgot'])
     ->get('/showpass', [App\Login::class, 'show_pass'])
+    ->get ('/register', [App\Register::class,'register'])
+    ->post('/register', [App\Register::class, 'register'])
     ;
    
 
@@ -47,11 +49,12 @@ echo $router->resolve($_SERVER['REQUEST_URI'], strtolower($_SERVER['REQUEST_METH
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <title>Lab5 Nguyen Huu Thang</title>
+    <title>Lab6 Nguyen Huu Thang</title>
 </head>
 
 <body>
-    <h1> lab5 Nguyễn Hữu Thắng PC06404</h1>
+
+    <h1> lab6 Nguyễn Hữu Thắng PC06404</h1>
    
 </body>
 
